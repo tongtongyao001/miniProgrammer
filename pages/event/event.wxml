@@ -1,0 +1,28 @@
+<!--pages/event/event.wxml-->
+<text>pages/event/event.wxml</text>
+<view>
+  <view> 1.绑定事件方式：'bindtap'  'bind:tap'  'catch:tap'</view>
+  <!-- <button bindtap="handleClick" size="mini">按钮</button>
+  <button bind:tap="handleClick" size="mini">按钮</button>
+  <button catch:tap="handleClick" size="mini">按钮</button> -->
+ <view> 2.常见事件：touchstart touchmove touchcancel（来电打断） touchend touchtap和longpress长按 只有一个发生        </view>
+ <view>3.事件对象
+  <view>(1) type:事件类型</view>
+  <view>(2) timeStamp:页面开始到我实现这个事件的时间戳</view>
+  <view>(3) target 和currentTarget 当前组件的信息(冒泡的时候有区别）
+    target：产生事件的view   currentTarget：触发事件的view</view>
+  <view>(4) detail 鼠标点击的位置</view>
+  <view>(5) touches： 当前屏幕上所有 触摸点及位置  changeTouches： 手指发生变化的  在touchend和多手指触摸时不同</view>
+ </view>
+</view>
+<view>4.事件传递的参数  在标签上定义一个data- 属性，可以在事件对象拿到dataset数据
+  <view class="containBox">
+    <block wx:for="{{transferData}}" wx:key="{{item}}">
+      <view bindtap="handleClickBox" data-transferItem="{{item}}" data-transferIndex="{{index}}">{{item}}            </view>
+    </block>
+  </view>
+</view>
+<view>5.事件捕获和事件冒泡  capture-bind:tap 捕获点击事件，bind会一层层传递
+<view>capture-catch:tap  阻止冒泡 </view>
+</view>
+

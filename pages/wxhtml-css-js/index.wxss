@@ -1,0 +1,20 @@
+/* pages/wxhtml-css-js/index.wxss */
+/* @import '/wxss/style/box.wxss' */
+/* 设置样式三种方式 */
+/* 1.行内style */
+/* 2.页面样式 */
+/* 3.全局样式在app.wxss里面设置样式 */
+/* 行内>业内样式>全局样式 */
+.pageStyle {
+  font-size: 40px;
+  color: pink;
+}
+.active {
+  font-weight: 700;
+}
+.box2 {
+
+}
+
+
+

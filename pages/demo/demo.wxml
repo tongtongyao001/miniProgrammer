@@ -1,0 +1,27 @@
+<!--pages/demo/demo.wxml-->
+<text>pages/demo/demo.wxml</text>
+<view>点击按钮获取用户信息</view>
+<button open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取用户信息按钮</button>
+<view>展示用户信息的方式</view>
+<view>
+  <open-data type="userNickName"></open-data>
+</view>
+<view class="userAvatarUrl">
+  <open-data type="userAvatarUrl" ></open-data>
+</view>
+<view>
+  <button bindtap="chooseImage" >从相册选择图片</button>
+</view>
+<view>识别小程序二维码</view>
+<image src="/assets/images/xiaoshou.png" show-menu-by-longpress></image>
+<view>
+  input组件   type:限制键盘的类型 password暗文  confirm-type完成试按钮的文字=》四个取值
+  <input value="haha"  confirm-type="go" ></input>
+</view>
+
+ <view>
+  scroll-view 局部滚动 父盒子水平方向不换行  white-space:nowrap样式
+</view>
+<scroll-view class="container1" scroll-x bindscroll="handleScroll">
+  <view wx:for="{{10}}" class="item1" >{{item}}</view>
+</scroll-view>>

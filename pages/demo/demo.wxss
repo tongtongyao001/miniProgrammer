@@ -1,0 +1,20 @@
+/* pages/demo/demo.wxss */
+.userAvatarUrl {
+  width: 100px;
+  height: 100px;
+}
+input {
+  border: 1px solid #000;
+  margin: 10px 30px;
+}
+.container1 {
+  background: pink;
+  white-space: nowrap;
+}
+.item1 {
+  width:100px;
+  height: 100px;
+  background: red;
+  display: inline-block;
+  margin:10px;
+}

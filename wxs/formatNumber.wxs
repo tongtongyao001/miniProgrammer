@@ -1,0 +1,7 @@
+function formatNumber(price,num){
+  num = num || 2 
+  return price.toFixed(num)
+}
+module.exports = {
+  formatNumber: formatNumber
+}

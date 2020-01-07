@@ -1,0 +1,9 @@
+/* pages/event/event.wxss */
+.containBox {
+  display: flex;
+ 
+} 
+.containBox view {
+ flex: 1;   
+ text-align: center;
+}

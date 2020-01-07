@@ -1,0 +1,68 @@
+<!--pages/wxhtml-css-js/index.wxml-->
+<text>pages/wxhtml-css-js/index.wxml</text>
+<view>1.样式--------------------</view>
+<!-- <view style="color:red;">行内样式</view>
+<view class="pageStyle">页面样式</view>
+<view class="globalStyle">全局样式</view> -->
+<view>
+<view>2.rpx-------------------</view>
+  <view>rpx:根据屏幕自适应，规定屏幕宽度750rpx-iphone6标准-375px</view>
+</view>
+<view>3.@impor导入wxss文件-----</view>
+<!-- <view class="box1">样式导入：在外部新建一个wxss文件，用@import引入</view> -->
+<view>官网样式库 WeUi</view>
+
+<view>4.动态切换类名-----------</view>
+<!-- <view class="{{isActive? 'active' :''}}">动态切换类名</view>
+
+<button size="mini" bindtap="handleChekck">切换显示隐藏</button>
+<view wx:if="{{isShow}}">展示wx:if</view> -->
+
+<view>5.if else---------------</view>
+<!-- <view wx:if="{{score>90}}">优秀</view>
+<view wx:elif="{{score>80}}">良好</view>
+<view wx:else>不及格</view> -->
+
+<view>6.wx:if   hidden----------</view>
+<view>wx:if和hidden的区别:hidden在dom树中存在，wx:if不在dom树存在</view>
+<view>频率高hidden</view>
+<!-- <view wx:if='{{false}}'>我是wx:if</view>
+<view hidden='{{true}}'>我是wx:hidden</view> -->
+<view>7.列表渲染--(1)wx:for--------</view>
+<view>数组，字符串，数字</view>
+<!-- <view wx:for='{{[0,1,2,3,4,5,6,7,8]}}'> {{item+'----'+index}}</view>
+<view>
+  <text wx:for='{{string1}}'> {{item+''}} </text>
+</view>
+<view>
+  <text>遍历9，相当于从0-8遍历一遍 </text>
+  <text wx:for="{{9}}"> {{item}}</text>
+</view> -->
+
+<view>(2)给item,index起名字 wx:for-item wx:key</view>
+<view>wx:key的作用：中间插入新的节点，diff算法，提高虚拟DOM的作用</view>
+<!-- <view>
+  <text wx:for="{{string1}}" wx:for-item="item1" wx:for-index="i">{{item1+'-'+i}}</text>
+</view> -->
+<!-- <block wx:for="{{arr1}}" wx:for-item="outerItem" wx:key="outerItem">
+  <block wx:for="{{outerItem}}" wx:key="item">{{'-'+item+'-'}}</block>
+</block> -->
+<view>8.block标签，view是组件，渲染耗费性能---</view>
+<block>
+ <text>标签上只可以放控制属性  遍历之类，不能放class之类  显示不出来</text>
+</block>
+<view>9.template模板-----导入wxml</view>
+<view>1）模板中包包裹的内容，在不适用的情况下不会显示2）必须有name属性</view>
+<!-- <template name="template1">
+  <view>
+  <text>{{title}}</text>
+  <button size="mini">{{btnText}}</button></view>
+</template>
+<template is="template1" data="{{title:'我是模板的title',btnText:'按钮的文字'}}"/>
+<template is="template1" data="{{title:'我是模板的title1',btnText:'按钮的文字1'}}"/> -->
+<view>
+  1)引入别的文件的模板 import引入,不能递归导入
+</view> 
+<!-- <import src="/pages/logs/logs.wxml" />
+<template is="otherWXMLtemplate" data="{{title:'我是模板的title',btnText:'按钮的文字'}}" /> -->
+<view>2）.include引入  src  可以把别的页面的wxml引入到当前页面加在的位置--可以循环导入-不能导入wxss,template</view>

@@ -1,0 +1,33 @@
+<!--pages/wxs/wxs.wxml-->
+<text>pages/wxs/wxs.wxml</text>
+<view>
+  <view>1.wxs的作用：在wxml中不能直接调用page/component中的函数</view>
+  <view>2.wxs的特点：</view>
+  <view>1）不能使用js中函数，也不能调用小程序API</view>
+  <view>2）WXS中的函数不能作为组件的实践回调</view>
+  <view>3.wxs的定义方式,model属性，wxs标签里面写js语言，es5语法，外界暴露变量module.exports</view>
+</view>
+<view>
+  <view>wxs的定义方式</view>
+  <view>方式一：在当前页面直接写</view>
+  <!-- <wxs module="info">
+    var message ='wxs的文字'
+    function sum(num1,num2){
+      return num1+num2
+    }
+    module.exports = {
+      message:message,
+      sum:sum
+    }
+  </wxs>
+  <view>wxs引入</view>
+  <view>
+    <view>{{info.message}}</view>
+    <view>{{info.sum(1,2)}}</view>
+  </view> -->
+  <view>方式二：通过wxs引入，只能相对路劲</view>
+  <!-- <wxs src="../../wxs/info.wxs" module="info"/>
+  <view>{{info.message}}</view> -->
+  <wxs src="../../wxs/formatNumber.wxs" module="format"/>
+  <view>{{format.formatNumber(2.333333,3)}}</view>
+</view>
