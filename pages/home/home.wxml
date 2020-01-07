@@ -1,2 +1,10 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
+<view>---</view>
+<view>小程序的数据展示:---{{msg1}}</view>
+<view>---</view>
+<!-- <view>列表数据的展示</view> -->
+<!-- <view wx:for="{{arr1}}"> {{item.name+'-'+item.age+'-'+item.id}} </view> -->
+<!--  bindtap  this.setData({count:100}) -->
+<view>监听页面数据的变化</view>
+<button size="mini"  bindtap="hanleClick">点击count+1</button> {{count}}

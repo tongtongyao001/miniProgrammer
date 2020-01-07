@@ -5,7 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    msg1:'传递的数据',
+    arr1:[
+      {name:'haha1',age:18,id:1},
+      {name:'haha2',age:18,id:2},
+      {name:'hah3',age:18,id:3}
+    ],
+    count:0
+  },
+  hanleClick() {
+    console.log(this.data.count)
+    this.setData({
+      count: this.data.count + 1
+    })
   },
 
   /**

@@ -1,4 +1,5 @@
 //app.js
+// 注册一个小程序实例
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -33,7 +34,21 @@ App({
       }
     })
   },
+  onShow(options){
+    console.log(options)
+  },
+  // - 小程序初始化，退出小程序之后，大概两个小时再进来的时候，会重新初始化小程序
+  onLoad(){},
+  onErro(){},
   globalData: {
-    userInfo: null
+    userInfo: null,
+    place:'全局的place'
   }
 })
+/* 
+APP里面可以做的事情
+1.判断场景值 onLauch onShow
+2.监听生命周期
+3.APP（）实例只有一个，可以共享数据
+
+ */

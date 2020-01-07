@@ -31,13 +31,45 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/index/login",
+					"pathName": "pages/index/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "pages/demo/demo",
+					"pathName": "pages/demo/demo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "样式-Js-html",
+					"pathName": "pages/wxhtml-css-js/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wxs/wxs",
+					"pathName": "pages/wxs/wxs",
+					"scene": null
+				}
+			]
 		}
 	}
 }
