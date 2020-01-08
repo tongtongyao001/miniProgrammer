@@ -1,0 +1,6 @@
+/* pages/componentsdemo/componentsdemo.wxss */
+.title {
+  font-size: 70rpx;
+  font-weight: 700;
+  color:blue;
+}

@@ -1,0 +1,6 @@
+/* components/components1/components1.wxss */
+.title {
+  font-size: 40rpx;
+  font-weight: 700;
+  color:red;
+}

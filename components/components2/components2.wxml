@@ -1,0 +1,3 @@
+<!--components/components2/components2.wxml-->
+<text>components/components2/components2.wxml</text>
+<view class="titleclass">组件的数据：{{title}}</view>

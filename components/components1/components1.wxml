@@ -1,0 +1,6 @@
+<!--components/components1/components1.wxml-->
+<text>components/components1/components1.wxml</text>
+<view>
+  <view class="title">{{title}}</view>
+
+</view>

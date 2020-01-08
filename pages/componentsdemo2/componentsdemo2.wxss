@@ -1,0 +1,4 @@
+/* pages/componentsdemo2/componentsdemo2.wxss */
+.red {
+  color: red;
+}

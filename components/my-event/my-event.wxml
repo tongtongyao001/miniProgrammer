@@ -1,0 +1,13 @@
+<!--components/my-event/my-event.wxml-->
+<!-- <text>components/my-event/my-event.wxml</text>xwx -->
+<!-- <button size="mini" bindtap="handelAdd">+1</button> -->
+<!-- <view class="outerBox">
+  <block wx:for="{{mytitles}}" wx:key="{{index}}" >
+    <view class="itemBox">
+      <text class="textBox {{currentIndex==index? 'active' :''}}" data-index="{{index}}"                   bindtap="handleItemClick" >{{item}}</text>
+    </view>
+  </block>
+</view> -->
+<view>
+  组件内的计数器：{{counter}}
+</view>

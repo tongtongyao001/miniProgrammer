@@ -1,0 +1,8 @@
+<!--pages/componentdemo3/componentdemo3.wxml-->
+<text>pages/componentdemo3/componentdemo3.wxml</text>
+<!-- <view>计数：{{count}}</view> -->
+<!-- <my-event bind:addData="handelMyAdd"/> -->
+<!-- <my-event mytitles="{{['衣服','鞋子','包包']}}" bind:handleClick="itemClicked"/> -->
+<button size="mini" bindtap="handlePageClick">页面中按钮+1</button>
+<my-event  id="counterCpt"/>
+
