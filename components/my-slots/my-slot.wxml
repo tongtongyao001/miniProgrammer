@@ -1,0 +1,13 @@
+<!--components/my-slots/my-slot.wxml-->
+<text>components/my-slots/my-slot.wxml</text>
+
+<view>
+<view>我可以放很多个插槽的组件开始</view>
+<view><slot name="slot1" /></view>
+<view><slot name="slot2" /></view>
+<view><slot name="slot3" /></view>
+<view><slot name="slot4" /></view>
+
+<view>我可以放很多个插槽的组件结束</view>
+
+</view>

@@ -1,0 +1,7 @@
+<!--pages/apisdemo/apisdemo.wxml-->
+<text>pages/apisdemo/apisdemo.wxml</text>
+<view><button size="mini" bindtap="handleShowToast">展示对话框</button></view>
+<view>
+ <button open-type="share">点击分享</button>
+</view>
+<navigator>跳转</navigator>

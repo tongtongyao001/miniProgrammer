@@ -1,0 +1,8 @@
+<!--pages/slotsDemo/slotsDemo.wxml-->
+<text>pages/slotsDemo/slotsDemo.wxml</text>
+<my-slots >
+<view slot="slot4">我是插槽4的内容</view>
+<view slot="slot1">我是插槽1的内容</view>
+<view slot="slot2">我是插槽2的内容</view>
+<view slot="slot3">我是插槽3的内容</view>
+</my-slots>
